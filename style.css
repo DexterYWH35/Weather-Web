@@ -80,9 +80,16 @@ header h1 {
 }
 
 #weather-icon {
-    width: 100px;  /* Adjust the width as needed */
-    height: 100px; /* Adjust the height as needed */
+    border-style: none;
+    box-shadow: none;
+    border-color: white;
+    margin: 0 auto; 
     display: block;
-    margin: 0 auto; /* Center the icon horizontally */
+    /* Center the icon horizontally */
 }
+
+#memo {
+    text-align: center;
+}
+
 

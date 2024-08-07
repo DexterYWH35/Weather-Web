@@ -38,4 +38,13 @@ function updateUI(data) {
     const iconURL = `http://openweathermap.org/img/wn/${data.weather[0].icon}.png`; // get excat url
     weatherIcon.src = iconURL;
 
+    const weatherDescb =  data.weather[0].description;
+
+    if(weatherDescb === 'light rain' || weatherDescb === 'rain' || weatherDescb === 'moderate rain'){
+        document.getElementById('memo').innerText = 'Get ur self an umbrella! :(`';
+    }else{
+        document.getElementById('memo').innerText = 'Emjoy your day! :D';
+
+    }
+
 }
